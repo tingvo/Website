@@ -1,0 +1,121 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(Fonts/Montserrat-VariableFont_wght.ttf);
+}
+
+@keyframes fadeInOpacity {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+* {
+    font-family: Montserrat, 'Courier New', Courier, monospace;
+    font-weight: normal;
+}
+
+header {
+    color: white;
+    background-color: black;
+    text-align: center;
+    width: 100%;
+    top: 0;
+}
+
+header h1 {
+    font-size: 3em;
+    padding: 20px;
+    margin: 0px;
+} 
+
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+body {
+    color: white;
+    background-color: rgb(42, 42, 42);
+    margin: 0px;
+}
+
+main {
+    text-align: center;
+    color: white;
+    margin: 15px;
+    opacity: 1;
+    animation-name: fadeInOpacity;
+    animation-iteration-count: ease-in;
+    animation-duration: 1.5s;
+}
+
+.contactForm {
+    display: grid;
+    place-items: center;
+}
+
+.formDesc {
+    text-align: center;
+}
+
+footer {
+    color: white;
+    background-color: black;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.contactLinks {
+    width: 100%;
+    overflow: auto;
+}
+
+.contactLinks div {
+    width: 33%;
+    float: left;
+    text-align: center;
+}
+
+.wrapper {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar ul {
+    list-style-type: none;
+    background-color: black;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+.navbar a:hover {
+    background-color: gray;
+    color: black;
+    opacity: 1;
+    animation-name: fadeInOpacity;
+    animation-iteration-count: ease-in;
+    animation-duration: 0.5s;
+}
+
+.navbar li {
+    float:left;
+    width: 25%
+}
+
+.link a{
+    color: white;
+}
