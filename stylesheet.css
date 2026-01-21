@@ -12,7 +12,6 @@
     }
 }
 
-
 * {
     font-family: Montserrat, 'Courier New', Courier, monospace;
     font-weight: normal;
@@ -24,6 +23,8 @@ header {
     text-align: center;
     width: 100%;
     top: 0;
+    position: fixed;
+    z-index: 1000;
 }
 
 header h1 {
@@ -41,12 +42,17 @@ body {
     color: white;
     background-color: rgb(42, 42, 42);
     margin: 0px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding-top: 10%;
 }
 
 main {
     text-align: center;
     color: white;
-    margin: 15px;
+    margin: 0px;
+    padding-bottom: 25%;
     opacity: 1;
     animation-name: fadeInOpacity;
     animation-iteration-count: ease-in;
@@ -65,9 +71,8 @@ main {
 footer {
     color: white;
     background-color: black;
-    position: fixed;
-    bottom: 0;
     width: 100%;
+    margin-top: auto;
 }
 
 .contactLinks {
@@ -76,7 +81,7 @@ footer {
 }
 
 .contactLinks div {
-    width: 33%;
+    width: 33.334%;
     float: left;
     text-align: center;
 }
@@ -95,6 +100,7 @@ footer {
     margin: 0px;
     overflow: hidden;
 }
+
 .navbar a {
     color: white;
     text-decoration: none;
@@ -102,6 +108,7 @@ footer {
     display: block;
     text-align: center;
 }
+
 .navbar a:hover {
     background-color: gray;
     color: black;
